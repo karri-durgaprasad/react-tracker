@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+
+/* Ultra-Compact Layout */
+.header, .header11 {
+  background: aqua;
+  padding: 0.3rem 0.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header2 {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding: 0.3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.sidebar {
+  background: aqua;
+  width: 18%;
   min-height: 100vh;
+  padding: 0.5rem;
+}
+
+/* Micro Form Styles */
+.transaction-form-container {
+  width: 95%;
+  max-width: 500px;
+  margin: 0.8rem auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+h2 {
+  text-align: center;
+  margin: 0.5rem 0 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.transaction-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 0.6rem;
+}
+
+.form-group {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+input:focus, select:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(76,175,80,0.2);
+}
+
+button {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  background: #0b33c1;
   color: white;
+  border: none;
+  border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: #092a9d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Tiny Navigation */
+.nav-link-text {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.3rem;
+  font-size: 0.85rem;
+  display: block;
+}
+
+.nav-link-text:hover {
+  color: #007bff;
 }
